@@ -17,18 +17,18 @@ while True:
             
         elif opcao_cliente == 'a':
             os.system('cls')
-            valor = input('Digite o índice que deseja apagar: ')
+            valor = int(input('Digite o índice que deseja apagar: '))
             lista.pop(valor)
 
         elif opcao_cliente == 'l':
                 os.system('cls')
-                print(lista,'\n')
+                for indice, item in enumerate(lista, start = 1):
+                      print(indice, item)
         
-
-        if opcao_cliente.isdigit():
-            print('Dígitos não são aceitos, tente novamente!')
-            time.sleep(3)
-            continue
-            ...
+        else: 
+              os.system('cls')
+              print('Está opção não existe, tente novamente ')
+              continue
+        ...
                 
         ...
