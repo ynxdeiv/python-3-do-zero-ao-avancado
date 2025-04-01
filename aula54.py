@@ -18,7 +18,10 @@ while True:
         elif opcao_cliente == 'a':
             os.system('cls')
             valor = int(input('Digite o índice que deseja apagar: '))
-            lista.pop(valor)
+            try:
+                  del lista[valor]
+            except:
+                  print('Indice inexistente')
 
         elif opcao_cliente == 'l':
                 os.system('cls')
