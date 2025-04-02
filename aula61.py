@@ -14,8 +14,12 @@ while True:
     for digito in cpf_inserido:
         if digito.isdigit():
             novo_cpf += digito
-
-    
+    try:
+        nove_digitos = int(novo_cpf[:9])
+        print(nove_digitos)
+    except ValueError:
+        print('NÃO PODE SER UM CPF')
+        continue
 
 
     ...
