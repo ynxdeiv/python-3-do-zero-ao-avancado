@@ -15,7 +15,7 @@ while True:
         if digito.isdigit():
             novo_cpf += digito
 
-    print(novo_cpf)
+    
 
 
     ...
