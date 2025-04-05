@@ -40,12 +40,15 @@ for pergunta in perguntas:
     os.system('cls')
 
     acertou = False
+
     escolha_int = None
+
     qnt_opcoes = len(opcoes)
 
     if escolha.isdigit():
         escolha_int = int(escolha)
-        
+    
+
     if escolha_int is not None:
         if escolha_int >=0 and escolha_int <qnt_opcoes:
             if opcoes[escolha_int] == pergunta['Resposta']:
