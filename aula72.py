@@ -11,3 +11,19 @@ def multilpicar(*args):
         total*=numero
     print(total)
     return total
+
+# Crie uma função fala se um número é par ou ímpar.
+# Retorne se o número é par ou ímpar.
+
+def par_impar(numero):
+    try:
+        if numero%2 ==0:
+            return 'Par'
+        else:
+            return 'Ímpar'
+    except TypeError:
+        print('O valor digitado não é um número')
+
+
+resultado = par_impar(1)
+print(resultado)
